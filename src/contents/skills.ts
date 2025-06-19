@@ -45,7 +45,7 @@ export const skills: SkillInfo[] = [
     image: "https://www.svgrepo.com/show/373845/mongo.svg",
   },
   {
-    title: "java",
+    title: "Java",
     image: 'https://www.svgrepo.com/show/452234/java.svg'
   }
 ];

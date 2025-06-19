@@ -35,7 +35,7 @@ const AboutPage = () => {
       </section>
       {/*education section*/}
        <section>
-         <h2 className='text-3xl font-bold mb-8 text-center'>Experience</h2>
+         <h2 className='text-3xl font-bold mb-8 text-center'>Education</h2>
          <div className='max-w-3xl mx-auto'>
             <div className='bg-gray-50 dark:bg-dark/50 p-6 rounded-lg shadow-md'>
                  <h3 className='text-xl font-semibold mb-2 '>Bachelor of Technology in Computer Science</h3>
