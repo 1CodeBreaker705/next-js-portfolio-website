@@ -10,10 +10,10 @@ export const projects:Project[] = [
       },
       {
         title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates.',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
+        description: 'A full-stack task management app that lets users securely create, organize, and track their tasks with JWT authentication and a modern React interface.',
+        technologies: ['React', 'Node.js','Express', 'MongoDB'],
+        githubLink: 'https://github.com/1CodeBreaker705/_TaskManagementApp',
+        demoLink: 'https://task-management-app-tan-six.vercel.app',
         image: '/projects/task-manager.webp',
       },
       {
