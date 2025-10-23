@@ -34,7 +34,7 @@ export const skills: SkillInfo[] = [
   },
   {
     title: "Express",
-    image: "https://www.svgrepo.com/show/376367/express.svg",
+    image: "https://www.svgrepo.com/show/330398/express.svg",
   },
   {
     title: "PostgreSQL",
