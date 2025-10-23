@@ -24,7 +24,7 @@ const AboutPage = () => {
                 </div>
                 <ul className='text-secondary list-disc list-inside'>
                   <li className='mb-2'>
-                    It took me 4-5 months to complete this course
+                    It took me around 4 months to complete this course
                   </li>
                   <li>
                     This course helped me to make strong foundation in both frontend and backend concepts
