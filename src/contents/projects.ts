@@ -11,7 +11,7 @@ export const projects:Project[] = [
       {
         title: 'Blogify',
         description: 'Developed a full-stack blogging web application using React, Tailwind CSS, and Appwrite, enabling users to create, publish, and interact with blogs.',
-        technologies: ['React','Tailwind Css','Appwrite'],
+        technologies: ['React','Tailwind CSS','Appwrite'],
         githubLink: 'https://github.com/1CodeBreaker705/Blogify-BlogWebsite',
         demoLink: 'https://blogify-blog-website.vercel.app/',
         image: '/projects/Blog-Website.png',
