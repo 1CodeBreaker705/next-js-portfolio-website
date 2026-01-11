@@ -22,7 +22,7 @@ const Skills = () => {
                 className="object-contain w-20 h-20 border-4"
               />
              </div>
-            <div className="bg-gray-900 text-white dark:text-black dark:bg-gray-200 py-1 group-hover:bg-primary group-hover:text-white">
+            <div className="bg-gray-900 text-white dark:text-black dark:bg-gray-200 py-1 duration-300 group-hover:bg-primary group-hover:text-white">
               <h2 className=" text-sm md:text-xl font-semibold mb-2">
                 {skill.title}
               </h2>
