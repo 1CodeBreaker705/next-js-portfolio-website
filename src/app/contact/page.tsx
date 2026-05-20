@@ -92,7 +92,7 @@ const ContactPage = () => {
         </div>
 
         {/* Right */}
-        <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-8 shadow-md border border-white/10 flex flex-col justify-between">
+        <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-8 shadow-md border border-white/10 flex flex-col">
 
           <div>
             <h2 className="text-2xl font-semibold mb-6">
@@ -100,14 +100,14 @@ const ContactPage = () => {
             </h2>
 
             <p className="text-secondary leading-relaxed mb-8">
-              Focused on building projects,making contributions
+              Focused on building projects, making contributions,
               and continuously improving my skills through
               practical experience and modern technologies.
             </p>
           </div>
 
           {/* Resume Button */}
-          <div className="mt-10">
+          <div className="mt-6">
             <Link
               href="/resume.pdf"
               target="_blank"
