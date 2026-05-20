@@ -63,7 +63,7 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <h3 className="font-medium">LinkedIn</h3>
+                <h3 className="font-medium">My LinkedIn</h3>
                 <p className="text-secondary text-sm">
                   Connect professionally
                 </p>
@@ -81,7 +81,7 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <h3 className="font-medium">GitHub</h3>
+                <h3 className="font-medium">My GitHub</h3>
                 <p className="text-secondary text-sm">
                   View my projects
                 </p>
