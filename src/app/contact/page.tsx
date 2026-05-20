@@ -1,127 +1,127 @@
 'use client'
+
 import Link from "next/link"
-import { useState } from "react"
-import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa"
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaFileDownload
+} from "react-icons/fa"
 
-interface FormData{
-    name:string,
-    email:string,
-    message:string
-}
+const ContactPage = () => {
+  return (
+    <div className="container max-w-6xl mx-auto px-6 py-20">
 
-type formStatus="idle" | "loading" | "success" | "error"
+      {/* Heading */}
+      <div className="text-center mb-20">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Contact
+        </h1>
 
-const ContactPage= ()=>{
-    const [formData,setFormData]=useState<FormData>({
-        name:"",
-        email:"",
-        message:""
-    })
-    const[status,setStatus]=useState<formStatus>("idle")
-    
-    const handleChange=(event:React.ChangeEvent<HTMLInputElement| HTMLTextAreaElement>)=>{
-        setFormData(prev=>({
-            ...prev,
-            [event.target.name]:event.target.value
-        }))
-    }
+        <p className="text-secondary max-w-2xl mx-auto text-lg leading-relaxed">
+          Feel free to reach out for collaborations,
+          opportunities, or just to connect.
+        </p>
+      </div>
 
-    const handleSubmit=async(event:React.FormEvent)=>{
-        event.preventDefault();
-        setStatus("loading")
-        try {
-            const response=await fetch("/api/contact",{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body: JSON.stringify(formData)
-            })
-            if(!response.ok){
-                throw new Error("failed to send message")
-            }
-            setStatus("success")
-            setFormData({
-                name:"",
-                email:"",
-                message:""
-            })
-         
-        } catch (error) {
-            setStatus("error")
-            console.error("Error sending message",error)
-        }
-    }
+      {/* Main Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-    return(
-    <div className="container max-w-7xl mx-auto py-20">
-        <h1 className="text-4xl font-bold mb-20 text-center">Contact Me</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/*contactinfo */}
-            <div className="space-y-8">
-                <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-                <p className="text-secondary md:w-2/3">I&apos;m always open to discovering new projects, creative ideas, or opportunities to be part of your visions.</p>
-                <div>
-                    <div className="flex items-center gap-4">
-                        <FaEnvelope className="h-6 w-6 text-primary"/>
-                        <div>
-                            <h3 className="font-semibold">Email:</h3>
-                            <Link href="mailto:ranjansingh0661@gmail.com" className="text-secondary hover:text-primary">ranjansingh0661@gmail.com</Link>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="flex items-center gap-4">
-                        <FaPhone className="h-6 w-6 text-primary"/>
-                        <div>
-                            <h3 className="font-semibold">Phone:</h3>
-                            <Link href="tel:+1234567890" className="text-secondary hover:text-primary">+1 (234) 567-890</Link>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="flex items-center gap-4">
-                        <FaMapMarkerAlt className="h-6 w-6 text-primary"/>
-                        <div>
-                            <h3 className="font-semibold">Location:</h3>
-                            <p className="text-secondary">XYZ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/*contactform*/}
-            <div className="bg-gray-50 dark:bg-dark/50 p-6 rounded-lg shadow-md ">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                 <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                    <input onChange={handleChange} value={formData.name} required type="text" id="name" name="name" placeholder="Enter your Name" className="w-full px-4 py-2 rounded-md text-black  dark:text-white border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2 focus:ring-primary focus:outline-none"/>
-                 </div>
-                 <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                    <input onChange={handleChange} value={formData.email}  required type="email" id="email" name="email" placeholder="Enter your Email" className="w-full px-4 py-2 text-black  dark:text-white rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2 focus:ring-primary focus:outline-none"/>
-                 </div>
-                 <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                    <textarea required rows={4} onChange={handleChange} value={formData.message}  id="message" name="message" placeholder="Your Message" className="w-full px-4 py-2 text-black dark:text-white rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-dark focus:ring-2 focus:ring-primary focus:outline-none"/>
-                 </div>
-                 <button type="submit" className="w-full  bg-primary text-white hover:bg-primary/80 px-4 py-2 rounded-md font-medium transition-colors duration-200 hover:cursor-pointer">
-                    {status==="loading"?"Sending...":"Send Message"}
-                 </button>
-                 {
-                    status==="success" && (
-                        <p className="text-green-500 text-center">Message sent successfully</p>
-                    )
-                 }
-                 {
-                    status==="error" && (
-                        <p className="text-red-500 text-center">Failed to Send Message</p>
-                    )
-                 }
-              </form>
-            </div>
+        {/* Left */}
+        <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-8 shadow-md border border-white/10">
+          <h2 className="text-2xl font-semibold mb-8">
+            Get in Touch
+          </h2>
+
+          <div className="space-y-6">
+
+            {/* Email */}
+            <Link
+              href="mailto:ranjansingh0661@gmail.com"
+              className="flex items-center gap-5 p-5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-300"
+            >
+              <div className="p-4 rounded-full bg-primary/10">
+                <FaEnvelope className="text-primary text-xl" />
+              </div>
+
+              <div>
+                <h3 className="font-medium">Email</h3>
+                <p className="text-secondary text-sm">
+                  ranjansingh0661@gmail.com
+                </p>
+              </div>
+            </Link>
+
+            {/* LinkedIn */}
+            <Link
+              href="https://www.linkedin.com/in/ranjan-singh-63a653350/"
+              target="_blank"
+              className="flex items-center gap-5 p-5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-300"
+            >
+              <div className="p-4 rounded-full bg-primary/10">
+                <FaLinkedin className="text-primary text-xl" />
+              </div>
+
+              <div>
+                <h3 className="font-medium">LinkedIn</h3>
+                <p className="text-secondary text-sm">
+                  Connect professionally
+                </p>
+              </div>
+            </Link>
+
+            {/* GitHub */}
+            <Link
+              href="https://github.com/1CodeBreaker705"
+              target="_blank"
+              className="flex items-center gap-5 p-5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-300"
+            >
+              <div className="p-4 rounded-full bg-primary/10">
+                <FaGithub className="text-primary text-xl" />
+              </div>
+
+              <div>
+                <h3 className="font-medium">GitHub</h3>
+                <p className="text-secondary text-sm">
+                  View my projects
+                </p>
+              </div>
+            </Link>
+
+          </div>
         </div>
+
+        {/* Right */}
+        <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-8 shadow-md border border-white/10 flex flex-col justify-between">
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              About
+            </h2>
+
+            <p className="text-secondary leading-relaxed mb-8">
+              Focused on building projects,making contributions
+              and continuously improving my skills through
+              practical experience and modern technologies.
+            </p>
+          </div>
+
+          {/* Resume Button */}
+          <div className="mt-10">
+            <Link
+              href="/resume.pdf"
+              target="_blank"
+              className="inline-flex items-center gap-3 bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-xl transition-colors duration-300"
+            >
+              <FaFileDownload />
+              Resume
+            </Link>
+          </div>
+
+        </div>
+      </div>
     </div>
-     )
+  )
 }
 
 export default ContactPage
