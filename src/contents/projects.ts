@@ -14,7 +14,7 @@ export const projects:Project[] = [
         technologies: ['React', 'Node.js','Express', 'MongoDB'],
         githubLink: 'https://github.com/1CodeBreaker705/_TaskManagementApp',
         demoLink: 'https://task-management-app-tan-six.vercel.app',
-        image: '/projects/New-Task-Management-App.png',
+        image: '/projects/Taskin-TaskManagementApp.png',
       },
       {
         title: 'Blogify',
