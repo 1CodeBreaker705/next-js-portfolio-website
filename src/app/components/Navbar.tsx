@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto px-4">
         {/* desktop menu */}
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold text-primary">
+          <Link href="/" className="text-xl font-bold text-primary hover:scale-105 transition-transform duration-300">
             DevWithRanjan&trade;
           </Link>
           {/* desktop menus */}
@@ -42,9 +42,14 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`${
-                    isActive ? "text-primary" : ""
-                  } hover:text-primary transition-colors font-medium `}
+                  className={`
+                    relative font-medium transition-colors duration-300
+                    ${isActive ? "text-primary" : "hover:text-primary"}
+                    after:absolute after:left-0 after:-bottom-1
+                    after:h-[2px] after:bg-primary
+                    after:transition-all after:duration-300
+                    ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}
+                  `}
                 >
                   {item.label}
                 </Link>
