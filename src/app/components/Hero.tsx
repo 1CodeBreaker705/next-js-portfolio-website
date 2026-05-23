@@ -10,6 +10,11 @@ import { fadeInUp, scaleIn } from "@/utils/animations";
 const Hero = () => {
   return (
     <section className="container py-28 max-w-7xl mx-auto px-4">
+      {/* background effect */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-20 left-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
+        <div className="absolute bottom-10 right-20 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
+      </div>
       <div className="max-w-3xl mx-auto text-center">
         <div className="flex flex-col items-center mb-4">
           <motion.div {...scaleIn} transition={{delay:0.2}}>
