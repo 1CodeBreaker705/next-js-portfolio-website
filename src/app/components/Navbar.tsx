@@ -27,7 +27,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-700 shadow-sm transition-colors" >
+    <nav className="fixed top-0 w-full bg-white/70 dark:bg-dark/70 backdrop-blur-md z-50 border-b border-gray-200/50 dark:border-gray-700/50 shadow-sm transition-colors" >
       <div className="container max-w-7xl mx-auto px-4">
         {/* desktop menu */}
         <div className="flex items-center justify-between h-16">
@@ -84,7 +84,7 @@ const Navbar = () => {
                   {
                     menuItems.map((item,index)=>(
                       <div key={index}>
-                        <Link href={item.href} className="block py-2 px-4 text-black dark:text-white hover:text-primary transition-colors">{item.label}</Link>
+                        <Link href={item.href} onClick={() => setIsMobileMenuOpen(false)} className="block py-2 px-4 text-black dark:text-white hover:text-primary transition-colors">{item.label}</Link>
                       </div>
                     ))
                   }
