@@ -40,13 +40,13 @@ const ContactPage = () => {
               href="mailto:ranjansingh0661@gmail.com"
               className="flex items-center gap-5 p-5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-300"
             >
-              <div className="p-4 rounded-full bg-primary/10">
+              <div className="p-4 rounded-full bg-primary/10 flex-shrink-0">
                 <FaEnvelope className="text-primary text-xl" />
               </div>
 
-              <div>
+              <div className='min-w-0'>
                 <h3 className="font-medium">Email</h3>
-                <p className="text-secondary text-sm">
+                <p className="text-secondary text-sm break-all">
                   ranjansingh0661@gmail.com
                 </p>
               </div>
