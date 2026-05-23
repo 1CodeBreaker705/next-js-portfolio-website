@@ -2,11 +2,11 @@ import { SkillInfo } from "@/types";
 export const skills: SkillInfo[] = [
   {
     title: "C",
-    image: "https://www.svgrepo.com/show/373482/c.svg",
+    image: "https://cdn.iconscout.com/icon/free/png-512/free-c-icon-svg-download-png-1175191.png?f=webp&w=256",
   },
   {
     title: "C++",
-    image: "https://www.svgrepo.com/show/376358/c-plus-plus.svg",
+    image: "https://cdn.iconscout.com/icon/free/png-512/free-c-icon-svg-download-png-226082.png?f=webp&w=256",
   },
   {
     title: "Python",
