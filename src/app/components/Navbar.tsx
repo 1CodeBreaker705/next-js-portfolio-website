@@ -13,10 +13,10 @@ import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
   const {theme,toggleTheme}=useTheme()
-  const [isMoblieMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMoblieMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const menuItems = [
@@ -68,7 +68,7 @@ const Navbar = () => {
             onClick={toggleMobileMenu}
             className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer md:hidden"
           >
-            {isMoblieMenuOpen ? (
+            {isMobileMenuOpen ? (
               <XMarkIcon className="w-6 h-6" />
             ) : (
               <Bars3Icon className="w-6 h-6" />
@@ -78,7 +78,7 @@ const Navbar = () => {
       </div>
       {/* mobile menu button */}
          {
-          isMoblieMenuOpen&&(
+          isMobileMenuOpen&&(
             <div className="md:hidden">
                 <div className="py-4 space-y-4">
                   {
