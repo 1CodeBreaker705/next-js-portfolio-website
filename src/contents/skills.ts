@@ -54,7 +54,7 @@ export const skills: SkillInfo[] = [
   },
   {
     title: "FastAPI",
-    image: "https://i.postimg.cc/kgxdtdw0/fastapi-svgrepo-com.jpg",
+    image: "https://cdn.iconscout.com/icon/free/png-512/free-fastapi-icon-svg-download-png-14550472.png?f=webp&w=256",
   },
   {
     title: "PostgreSQL",
@@ -65,7 +65,7 @@ export const skills: SkillInfo[] = [
     image: "https://www.svgrepo.com/show/373845/mongo.svg",
   },
   {
-    title: "Redux-Redux Toolkit",
+    title: "Redux Toolkit",
     image: "https://www.svgrepo.com/show/452093/redux.svg",
   },
   {
