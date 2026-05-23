@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, scaleIn } from "@/utils/animations";
 const Hero = () => {
   return (
-    <section className="container py-28 max-w-7xl mx-auto px-4">
+    <section className="relative container py-28 max-w-7xl mx-auto px-4">
       {/* background effect */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-20 left-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
