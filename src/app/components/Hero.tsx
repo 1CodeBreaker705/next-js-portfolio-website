@@ -19,12 +19,15 @@ const Hero = () => {
       <div className=" max-w-3xl mx-auto text-center">
         <div className="flex flex-col items-center mb-4">
           <motion.div {...scaleIn} transition={{delay:0.2}}>
+             <div className="w-45 h-45 rounded-full overflow-hidden ring-4 ring-primary/80 shadow-2xl shadow-primary/25 mb-8">
               <Image
-            src="/Profile.jpeg"
-            alt="profileimage"
-            width={500}
-            height={500}
-            className="rounded-full mb-8 w-45 h-45 object-cover object-bottom translate-y-4 ring-4 ring-primary/80 shadow-2xl shadow-primary/25"
+                src="/Profile.jpeg"
+                alt="profileimage"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover object-bottom translate-y-2"
+              />
+            </div>
           />
           </motion.div>
           
