@@ -24,7 +24,7 @@ const Hero = () => {
             alt="profileimage"
             width={500}
             height={500}
-            className="rounded-full mb-4 w-45 h-45 translate-y-1 object-cover ring-4 ring-primary/70 shadow-2xl shadow-primary/25"
+            className="rounded-full mb-4 w-45 h-45 translate-y-2 object-cover ring-4 ring-primary/70 shadow-2xl shadow-primary/25"
           />
           </motion.div>
           
