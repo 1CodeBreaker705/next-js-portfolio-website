@@ -25,7 +25,7 @@ const Hero = () => {
                 alt="profileimage"
                 width={500}
                 height={500}
-                className="w-full h-full object-cover object-bottom "
+                className="w-full h-full object-cover object-bottom scale-[1.02] "
               />
             </div>
           </motion.div>
