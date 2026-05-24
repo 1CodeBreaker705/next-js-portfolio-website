@@ -28,7 +28,6 @@ const Hero = () => {
                 className="w-full h-full object-cover object-bottom translate-y-2"
               />
             </div>
-          />
           </motion.div>
           
           <motion.h1 {...fadeInUp} transition={{delay:0.4}} className="text-4xl font-bold md:text-6xl mb-6">
