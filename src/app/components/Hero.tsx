@@ -25,7 +25,7 @@ const Hero = () => {
                 alt="profileimage"
                 width={500}
                 height={500}
-                className="w-full h-full object-cover object-bottom translate-y-2"
+                className="w-full h-full object-cover object-bottom translate-y-1"
               />
             </div>
           </motion.div>
@@ -38,8 +38,8 @@ const Hero = () => {
                 loop={Infinity}
                 cursor
                 cursorStyle="|"
-                typeSpeed={450}
-                deleteSpeed={150}
+                typeSpeed={400}
+                deleteSpeed={100}
                 delaySpeed={1000}
               />
             </span>
