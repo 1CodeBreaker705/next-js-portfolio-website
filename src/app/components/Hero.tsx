@@ -77,13 +77,13 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row justify-center gap-4 w-full md:w-auto">
             <Link
               href="/projects"
-              className="bg-primary inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/75 transition-colors"
+              className="bg-primary inline-block w-full md:w-auto text-white px-6 py-3 rounded-lg hover:bg-primary/75 transition-colors"
             >
-              View Project
+              View Projects
             </Link>
             <Link
               href="/contact"
-              className="bg-gray-600 inline-block w-full md:w-auto text-white  px-8 py-3 rounded-lg hover:bg-gray-500 transition-colors"
+              className="bg-gray-300 inline-block w-full md:w-auto text-white  px-6 py-3 rounded-lg hover:bg-gray-500 transition-colors"
             >
               Contact Me
             </Link>
