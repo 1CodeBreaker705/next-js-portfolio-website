@@ -42,7 +42,7 @@ const Hero = () => {
               />
             </span>
           </motion.h1>
-          <motion.p {...fadeInUp} transition={{delay:0.5}} className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8  text-center">
+          <motion.p {...fadeInUp} transition={{delay:0.5}} className="text-xl md:text-2xl md:whitespace-nowrap text-gray-600 dark:text-gray-300 mb-8  text-center">
             Full Stack Developer | UI/UX Enthusiast | Building Modern Web
             Experiences
           </motion.p>
