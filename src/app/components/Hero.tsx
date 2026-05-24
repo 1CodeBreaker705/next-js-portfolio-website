@@ -24,7 +24,7 @@ const Hero = () => {
             alt="profileimage"
             width={500}
             height={500}
-            className="rounded-full mb-8 w-45 h-45 object-cover object-bottom ring-4 ring-primary/70 shadow-2xl shadow-primary/25"
+            className="rounded-full mb-8 w-45 h-45 object-cover object-bottom translate-y-2 ring-4 ring-primary/70 shadow-2xl shadow-primary/25"
           />
           </motion.div>
           
@@ -36,7 +36,7 @@ const Hero = () => {
                 loop={Infinity}
                 cursor
                 cursorStyle="|"
-                typeSpeed={500}
+                typeSpeed={450}
                 deleteSpeed={150}
                 delaySpeed={1000}
               />
