@@ -83,8 +83,6 @@ const Hero = () => {
         </div>
       </div>
     </div>   
-     {/* smooth fade into next section */}
-     <div className="absolute bottom-0 left-0 w-full h-40 pointer-events-none bg-gradient-to-b from-transparent to-slate-950"></div>
     </section>
   );
 };
