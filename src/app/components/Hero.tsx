@@ -9,13 +9,14 @@ import { motion } from "framer-motion";
 import { fadeInUp, scaleIn } from "@/utils/animations";
 const Hero = () => {
   return (
-    <section className="relative container py-28 max-w-7xl mx-auto px-4">
+    <section className="relative py-28 overflow-hidden">
       {/* background effect */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-20 left-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
         <div className="absolute bottom-10 right-20 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
-      </div>
-      <div className="max-w-3xl mx-auto text-center">
+      </div> 
+    <div className="container max-w-7xl mx-auto px-4">
+      <div className=" max-w-3xl mx-auto text-center">
         <div className="flex flex-col items-center mb-4">
           <motion.div {...scaleIn} transition={{delay:0.2}}>
               <Image
@@ -41,7 +42,7 @@ const Hero = () => {
               />
             </span>
           </motion.h1>
-          <motion.p {...fadeInUp} transition={{delay:0.5}} className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 md:whitespace-nowrap text-center">
+          <motion.p {...fadeInUp} transition={{delay:0.5}} className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8  text-center">
             Full Stack Developer | UI/UX Enthusiast | Building Modern Web
             Experiences
           </motion.p>
@@ -81,6 +82,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+    </div>   
+     {/* smooth fade into next section */}
+     <div className="absolute bottom-0 left-0 w-full h-40 pointer-events-none bg-gradient-to-b from-transparent to-slate-950"></div>
     </section>
   );
 };
