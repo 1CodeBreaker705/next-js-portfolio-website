@@ -13,7 +13,7 @@ const Hero = () => {
       {/* background effect */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-20 left-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
-        <div className="absolute bottom-16 right-20 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
+        <div className="absolute bottom-18 right-20 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
       </div> 
     <div className="container max-w-7xl mx-auto px-4">
       <div className=" max-w-3xl mx-auto text-center">
