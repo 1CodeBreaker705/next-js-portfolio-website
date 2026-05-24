@@ -25,7 +25,7 @@ const Hero = () => {
                 alt="profileimage"
                 width={500}
                 height={500}
-                className="w-full h-full object-cover object-bottom translate-y-1"
+                className="w-full h-full object-cover object-bottom "
               />
             </div>
           </motion.div>
@@ -51,18 +51,24 @@ const Hero = () => {
           <div className="flex justify-center space-x-5 mb-8 ">
             <Link
               href="https://github.com/1CodeBreaker705"
+               target="_blank"
+               rel="noopener noreferrer"
               className="text-2xl md:text-3xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <FaGithub />
             </Link>
             <Link
               href="https://www.linkedin.com/in/ranjan-singh-63a653350/"
+               target="_blank"
+               rel="noopener noreferrer"
               className="text-2xl md:text-3xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <FaLinkedin />
             </Link>
             <Link
               href="https://leetcode.com/u/ranjansingh0661/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-2xl md:text-3xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300"
             >
               <SiLeetcode />
