@@ -11,8 +11,8 @@ const ProjectPage=()=>{
          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
               projects.map((project)=>(
-                <article key={project.title} className='bg-gray-100/70 dark:bg-dark/50 rounded-lg shadow-md p-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.04]'>
-                    <div className='relative aspect-video mb-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700'>
+                <article key={project.title} className='bg-gray-100/60 dark:bg-dark/50 rounded-lg shadow-md p-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.04]'>
+                    <div className='relative aspect-video mb-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800'>
                         <Image src={project.image}  alt={project.title}  fill className='object-cover' sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw'/>
                     </div>
                     <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
