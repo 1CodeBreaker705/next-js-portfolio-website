@@ -80,5 +80,9 @@ export const skills: SkillInfo[] = [
     title: "Docker",
     image: "https://www.svgrepo.com/show/448221/docker.svg",
   },
+   {
+    title: "Linux",
+    image: "https://www.svgrepo.com/show/448236/linux.svg",
+  },
   
 ];
