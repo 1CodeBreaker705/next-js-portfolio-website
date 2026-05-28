@@ -58,21 +58,21 @@ const TerminalSection = () => {
     // boot sequence
     if (line.startsWith(">")) {
       return (
-        <div key={i} className="text-cyan-600 dark:text-cyan-400">
+        <span key={i} className="text-cyan-600 dark:text-cyan-400">
           {line}
-        </div>
+        </span>
       );
     }
 
     // commands
     if (line.startsWith("~/")) {
       return (
-        <div
+        <span
           key={i}
           className="text-green-600 dark:text-green-400 font-semibold mt-4"
         >
           {line}
-        </div>
+        </span>
       );
     }
 
@@ -83,17 +83,17 @@ const TerminalSection = () => {
       line.includes("}")
     ) {
       return (
-        <div key={i} className="text-cyan-600 dark:text-cyan-400">
+        <span key={i} className="text-cyan-600 dark:text-cyan-400">
           {line}
-        </div>
+        </span>
       );
     }
 
     // normal text
     return (
-      <div key={i} className="text-gray-800 dark:text-gray-300">
+      <span key={i} className="text-gray-800 dark:text-gray-300">
         {line}
-      </div>
+      </span>
     );
   };
 
@@ -122,12 +122,12 @@ const TerminalSection = () => {
           <div className="p-6 md:p-8 font-mono text-sm md:text-base leading-relaxed whitespace-pre-wrap min-h-[420px]">
 
             {displayedText.split("\n").map((line, i, arr) => (
-              <div key={i} className="relative">
+              <div key={i}>
                 {renderLine(line, i)}
             
                 {i === arr.length - 1 &&
                   displayedText.length < fullText.length && (
-                    <span className="inline-block w-[2px] h-5 ml-[2px] bg-black dark:bg-white animate-pulse align-middle"></span>
+                    <span className="inline-block w-[2px] h-[1em] ml-[2px] bg-black dark:bg-white animate-pulse align-middle"></span>
                   )}
               </div>
             ))}
