@@ -121,14 +121,16 @@ const TerminalSection = () => {
           {/* terminal body */}
           <div className="p-6 md:p-8 font-mono text-sm md:text-base leading-relaxed whitespace-pre-wrap min-h-[420px]">
 
-            {displayedText.split("\n").map((line, i) =>
-              renderLine(line, i)
-            )}
-
-            {/* blinking cursor */}
-            {displayedText.length < fullText.length && (
-              <span className="inline-block w-[2px] h-5 ml-1 bg-black dark:bg-white animate-pulse -mb-[3px]"></span>
-            )}
+            {displayedText.split("\n").map((line, i, arr) => (
+              <div key={i} className="relative">
+                {renderLine(line, i)}
+            
+                {i === arr.length - 1 &&
+                  displayedText.length < fullText.length && (
+                    <span className="inline-block w-[2px] h-5 ml-[2px] bg-black dark:bg-white animate-pulse align-middle"></span>
+                  )}
+              </div>
+            ))}
 
           </div>
         </div>
