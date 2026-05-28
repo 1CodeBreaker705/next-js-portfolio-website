@@ -3,7 +3,7 @@ import Image from "next/image";
 import { skills } from "@/contents/skills";
 const Skills = () => {
   return (
-    <section className="py-20 container max-w-7xl mx-auto px-4 mb-50">
+    <section className="py-20 container max-w-7xl mx-auto px-4 mb-16">
       <h2 className="text-3xl font-bold mb-12 text-center">
         My Skills And Tech-Stack
       </h2>
