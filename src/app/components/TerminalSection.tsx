@@ -49,7 +49,7 @@ const TerminalSection = () => {
       if (index > fullText.length) {
         clearInterval(interval);
       }
-    }, 20);
+    }, 28);
 
     return () => clearInterval(interval);
   }, [isInView]);
