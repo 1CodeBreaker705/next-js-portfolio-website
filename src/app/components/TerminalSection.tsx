@@ -6,6 +6,9 @@ import { Typewriter } from "react-simple-typewriter";
 const TerminalSection = () => {
   return (
     <section className="pb-16">
+      <h2 className="text-3xl font-bold mb-12 text-center">
+        Terminal
+      </h2>
       <div className="container max-w-7xl mx-auto px-4">
 
         <div className="w-full bg-white dark:bg-[#0d1117] border border-gray-300 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden transition-colors duration-300">
@@ -18,7 +21,7 @@ const TerminalSection = () => {
             <div className="w-3 h-3 rounded-full bg-green-500"></div>
 
             <span className="ml-4 text-sm text-gray-500 dark:text-gray-400 font-mono">
-              ranjan@portfolio:~
+              ranjan@dev:~
             </span>
           </div>
 
