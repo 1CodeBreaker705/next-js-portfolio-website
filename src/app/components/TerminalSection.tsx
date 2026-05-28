@@ -127,7 +127,7 @@ const TerminalSection = () => {
 
             {/* blinking cursor */}
             {displayedText.length < fullText.length && (
-              <span className="inline-block w-3 h-5 ml-1 bg-black dark:bg-white animate-pulse rounded-sm align-middle"></span>
+              <span className="inline-block w-[2px] h-5 ml-1 bg-black dark:bg-white animate-pulse align-middle"></span>
             )}
 
           </div>
