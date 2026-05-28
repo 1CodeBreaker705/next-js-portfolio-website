@@ -54,7 +54,7 @@ const TerminalSection = () => {
     return () => clearInterval(interval);
   }, [isInView]);
 
-  const renderLine = (line, i) => {
+  const renderLine = (line: string, i: number) => {
     // boot sequence
     if (line.startsWith(">")) {
       return (
