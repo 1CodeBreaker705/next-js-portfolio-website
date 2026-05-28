@@ -125,8 +125,7 @@ const TerminalSection = () => {
               <div key={i}>
                 {renderLine(line, i)}
             
-                {i === arr.length - 1 &&
-                  displayedText.length < fullText.length && (
+                {i === arr.length - 1 && (
                     <span className="inline-block w-[2px] h-[1em] ml-[2px] bg-black dark:bg-white animate-pulse align-middle"></span>
                   )}
               </div>
