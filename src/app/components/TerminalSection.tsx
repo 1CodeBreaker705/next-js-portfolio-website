@@ -69,7 +69,7 @@ const TerminalSection = () => {
       return (
         <span
           key={i}
-          className="text-green-700 dark:text-green-400 mt-4"
+          className="text-green-600 dark:text-green-400 mt-4"
         >
           {line}
         </span>
@@ -91,7 +91,7 @@ const TerminalSection = () => {
 
     // normal text
     return (
-      <span key={i} className="text-gray-900 dark:text-gray-300">
+      <span key={i} className="text-gray-800 dark:text-gray-300">
         {line}
       </span>
     );
