@@ -58,7 +58,7 @@ const TerminalSection = () => {
     // boot sequence
     if (line.startsWith(">")) {
       return (
-        <span key={i} className="text-gray-500 dark:text-gray-200">
+        <span key={i} className="text-gray-500 dark:text-gray-400">
           {line}
         </span>
       );
