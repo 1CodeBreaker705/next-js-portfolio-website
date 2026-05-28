@@ -104,7 +104,7 @@ const TerminalSection = () => {
         </h2>
        <div className="container max-w-7xl mx-auto px-4">
 
-        <div className="w-full bg-white dark:bg-[#0d1117] border border-gray-300 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden transition-colors duration-300">
+        <div className="w-full bg-white dark:bg-[#0d1117] border border-gray-300 dark:border-gray-800 rounded-2xl shadow-xl overflow-hidden transition-colors duration-300">
 
           {/* terminal header */}
           <div className="flex items-center gap-2 px-4 py-3 bg-gray-100 dark:bg-[#161b22] border-b border-gray-300 dark:border-gray-800">
