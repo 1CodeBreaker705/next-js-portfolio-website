@@ -91,7 +91,7 @@ const TerminalSection = () => {
 
     // normal text
     return (
-      <span key={i} className="text-gray-900 dark:text-gray-200">
+      <span key={i} className="text-gray-900 dark:text-gray-300">
         {line}
       </span>
     );
