@@ -1,8 +1,31 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
 import { useInView } from "framer-motion";
+
+const fullText = `> booting terminal...
+> loading developer mindset...
+> initializing creative systems...
+> ready.
+
+~/ brain.exe
+
+⚡ overloaded but functioning...
+
+~/ motivation
+
+Building things that people genuinely find useful and enjoy using.
+
+~/ fun_fact
+
+I like crafting visually polished interfaces, smooth interactions,
+and backend systems that scale beyond just the UI.
+
+~/ current_state
+
+while(alive) {
+   code();
+}`;
 
 const TerminalSection = () => {
   const ref = useRef(null);
@@ -12,27 +35,81 @@ const TerminalSection = () => {
     margin: "-100px",
   });
 
-  const [startTyping, setStartTyping] = useState(false);
+  const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    if (isInView) {
-      setStartTyping(true);
-    }
+    if (!isInView) return;
+
+    let index = 0;
+
+    const interval = setInterval(() => {
+      setDisplayedText(fullText.slice(0, index));
+      index++;
+
+      if (index > fullText.length) {
+        clearInterval(interval);
+      }
+    }, 20);
+
+    return () => clearInterval(interval);
   }, [isInView]);
+
+  const renderLine = (line, i) => {
+    // boot sequence
+    if (line.startsWith(">")) {
+      return (
+        <div key={i} className="text-cyan-500 dark:text-cyan-400">
+          {line}
+        </div>
+      );
+    }
+
+    // commands
+    if (line.startsWith("➜")) {
+      return (
+        <div
+          key={i}
+          className="text-green-600 dark:text-green-400 font-semibold mt-4"
+        >
+          {line}
+        </div>
+      );
+    }
+
+    // code block
+    if (
+      line.includes("while(alive)") ||
+      line.includes("code();") ||
+      line.includes("}")
+    ) {
+      return (
+        <div key={i} className="text-yellow-600 dark:text-yellow-300">
+          {line}
+        </div>
+      );
+    }
+
+    // normal text
+    return (
+      <div key={i} className="text-gray-800 dark:text-gray-300">
+        {line}
+      </div>
+    );
+  };
 
   return (
     <section className="pb-16" ref={ref}>
       <div className="container max-w-7xl mx-auto px-4">
 
-        {/* section heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 font-mono">
+        {/* simple heading */}
+        <h2 className="text-3xl font-bold mb-12 text-center">
           Terminal
         </h2>
 
         <div className="w-full bg-white dark:bg-[#0d1117] border border-gray-300 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden transition-colors duration-300">
 
           {/* terminal header */}
-          <div className="flex items-center gap-2 px-4 py-3 bg-gray-100 dark:bg-[#161b22] border-b border-gray-300 dark:border-gray-800 transition-colors duration-300">
+          <div className="flex items-center gap-2 px-4 py-3 bg-gray-100 dark:bg-[#161b22] border-b border-gray-300 dark:border-gray-800">
 
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -44,85 +121,15 @@ const TerminalSection = () => {
           </div>
 
           {/* terminal body */}
-          <div className="p-6 md:p-8 font-mono text-sm md:text-base leading-relaxed whitespace-pre-line transition-colors duration-300 min-h-[420px]">
+          <div className="p-6 md:p-8 font-mono text-sm md:text-base leading-relaxed whitespace-pre-wrap min-h-[420px]">
 
-            {startTyping && (
-              <>
-                {/* boot sequence */}
-                <div className="text-cyan-500 dark:text-cyan-400 mb-8">
-                  <Typewriter
-                    words={[
-`> booting terminal...
-> loading developer mindset...
-> initializing creative systems...
-> ready.
+            {displayedText.split("\n").map((line, i) =>
+              renderLine(line, i)
+            )}
 
-`
-                    ]}
-                    loop={1}
-                    cursor={false}
-                    typeSpeed={35}
-                    deleteSpeed={0}
-                    delaySpeed={500}
-                  />
-                </div>
-
-                {/* main content */}
-                <div className="text-gray-800 dark:text-gray-300">
-
-                  <div className="text-green-600 dark:text-green-400">
-                    <Typewriter
-                      words={["➜ brain.exe"]}
-                      loop={1}
-                      cursor={false}
-                      typeSpeed={40}
-                      deleteSpeed={0}
-                      delaySpeed={500}
-                    />
-                  </div>
-
-                  <p className="mt-3 mb-6">
-                    ⚡ overloaded but functioning...
-                  </p>
-
-                  <div className="text-green-600 dark:text-green-400">
-                    ➜ motivation
-                  </div>
-
-                  <p className="mt-3 mb-6 text-gray-700 dark:text-gray-300">
-                    Building things that people genuinely find useful and enjoy using.
-                  </p>
-
-                  <div className="text-green-600 dark:text-green-400">
-                    ➜ fun_fact
-                  </div>
-
-                  <p className="mt-3 mb-6 text-gray-700 dark:text-gray-300">
-                    I like crafting visually polished interfaces, smooth interactions,
-                    and backend systems that scale beyond just the UI.
-                  </p>
-
-                  <div className="text-green-600 dark:text-green-400">
-                    ➜ current_state
-                  </div>
-
-                  <pre className="mt-3 text-gray-700 dark:text-gray-300">
-{`while(alive) {
-   code();
-}`}
-                  </pre>
-
-                  {/* blinking cursor */}
-                  <div className="mt-6 flex items-center">
-                    <span className="text-green-600 dark:text-green-400">
-                      ➜
-                    </span>
-
-                    <span className="ml-2 w-3 h-5 bg-black dark:bg-white animate-pulse rounded-sm"></span>
-                  </div>
-
-                </div>
-              </>
+            {/* blinking cursor */}
+            {displayedText.length < fullText.length && (
+              <span className="inline-block w-3 h-5 ml-1 bg-black dark:bg-white animate-pulse rounded-sm align-middle"></span>
             )}
 
           </div>
