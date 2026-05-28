@@ -83,7 +83,7 @@ const TerminalSection = () => {
       line.includes("}")
     ) {
       return (
-        <span key={i} className="text-blue-700 dark:text-cyan-400">
+        <span key={i} className="text-cyan-500 dark:text-cyan-400">
           {line}
         </span>
       );
