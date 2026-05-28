@@ -32,7 +32,7 @@ const TerminalSection = () => {
 
   const isInView = useInView(ref, {
     once: true,
-    margin: "-100px",
+    amount: 0.3,
   });
 
   const [displayedText, setDisplayedText] = useState("");
@@ -65,7 +65,7 @@ const TerminalSection = () => {
     }
 
     // commands
-    if (line.startsWith("➜")) {
+    if (line.startsWith("~/")) {
       return (
         <div
           key={i}
