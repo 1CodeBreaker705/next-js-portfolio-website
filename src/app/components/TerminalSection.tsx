@@ -58,7 +58,7 @@ const TerminalSection = () => {
     // boot sequence
     if (line.startsWith(">")) {
       return (
-        <div key={i} className="text-cyan-500 dark:text-cyan-400">
+        <div key={i} className="text-cyan-600 dark:text-cyan-400">
           {line}
         </div>
       );
@@ -83,7 +83,7 @@ const TerminalSection = () => {
       line.includes("}")
     ) {
       return (
-        <div key={i} className="text-cyan-500 dark:text-cyan-400">
+        <div key={i} className="text-cyan-600 dark:text-cyan-400">
           {line}
         </div>
       );
