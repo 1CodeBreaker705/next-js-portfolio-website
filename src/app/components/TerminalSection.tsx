@@ -83,7 +83,7 @@ const TerminalSection = () => {
       line.includes("}")
     ) {
       return (
-        <div key={i} className="text-yellow-600 dark:text-yellow-300">
+        <div key={i} className="text-cyan-500 dark:text-cyan-400">
           {line}
         </div>
       );
@@ -99,12 +99,10 @@ const TerminalSection = () => {
 
   return (
     <section className="pb-16" ref={ref}>
-      <div className="container max-w-7xl mx-auto px-4">
-
-        {/* simple heading */}
         <h2 className="text-3xl font-bold mb-12 text-center">
           Terminal
         </h2>
+       <div className="container max-w-7xl mx-auto px-4">
 
         <div className="w-full bg-white dark:bg-[#0d1117] border border-gray-300 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden transition-colors duration-300">
 
