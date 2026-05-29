@@ -77,17 +77,37 @@ const TerminalSection = () => {
     }
 
     // code block
-    if (
-      line.includes("while(alive)") ||
-      line.includes("code();") ||
-      line.includes("}")
-    ) {
-      return (
-        <span key={i} className="text-cyan-500 dark:text-cyan-400">
-          {line}
-        </span>
-      );
-    }
+     // while(alive) {
+      if (line.includes("while(alive)")) {
+        return (
+          <span key={i} className="text-cyan-500 dark:text-cyan-400">
+            while(
+            <span className="text-violet-400 dark:text-violet-300">
+              alive
+            </span>
+            )
+            {" {"}
+          </span>
+        );
+      }
+      
+      // code();
+      if (line.includes("code();")) {
+        return (
+          <span key={i} className="text-cyan-500 dark:text-cyan-400">
+            {line}
+          </span>
+        );
+      }
+      
+      // }
+      if (line.trim() === "}") {
+        return (
+          <span key={i} className="text-cyan-500 dark:text-cyan-400">
+            {"}"}
+          </span>
+        );
+      }
 
     // normal text
     return (
