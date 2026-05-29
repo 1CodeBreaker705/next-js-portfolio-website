@@ -82,7 +82,7 @@ const TerminalSection = () => {
         return (
           <span key={i} className="text-cyan-500 dark:text-cyan-400">
             while(
-            <span className="text-purple-500 dark:text-purple-400">
+            <span className="text-purple-400 dark:text-purple-300">
               alive
             </span>
             )
