@@ -31,7 +31,7 @@ const AboutPage = () => {
       {/* Development Philosophy */}
       <section className='mb-16'>
         <h2 className='text-3xl font-bold mb-8 text-center'>
-          My Development Philosophy <span><FaCode className='h-12 w-12 text-black dark:text-white/></span>
+          My Development Philosophy <FaCode className='h-12 w-12 text-black dark:text-white/>
         </h2>
 
         <div className='max-w-3xl mx-auto bg-gray-50 dark:bg-dark/50 p-8 rounded-lg shadow-md'>
