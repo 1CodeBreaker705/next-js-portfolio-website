@@ -4,15 +4,22 @@ import Link from 'next/link'
 import React from 'react'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 
+type ProjectsProps = {
+  limit?: number;
+};
 
-const Projects = () => {
+const Projects = ({limit}:ProjectsProps) => {
+   const displayedProjects = limit
+    ? projects.slice(0, limit)
+    : projects;
+
   return (
     <div>
       <section className='py-20 container max-w-7xl mx-auto px-4'>
         <h2 className='text-3xl font-bold mb-12 text-center'>Featured Projects</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
-              projects.map((project,index)=>(
+              displayedProjects.map((project,index)=>(
                 <article key={index} className='bg-gray-100/60 dark:bg-dark/50 rounded-lg shadow-md p-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.04]'>
                     <div className='relative aspect-video mb-4 rounded-lg overflow-hidden border border-gray-300 dark:border-gray-900'>
                         <Image src={project.image}  alt={project.title}  fill className='object-cover' sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw'/>
