@@ -32,8 +32,8 @@ return ( <div className="container max-w-7xl mx-auto py-20 px-4">
         {/* Development Philosophy */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 flex items-center justify-center gap-3">
-            <FaCode className="h-8 w-8" />
-            <span>My Development Philosophy</span>
+            <span>My Development Philosophy </span>
+            <FaCode className="h-8 w-8" />  
           </h2>
       
           <div className="max-w-2xl mx-auto bg-gray-50 dark:bg-dark/50 p-8 rounded-xl shadow-md border border-gray-200 dark:border-gray-800">
