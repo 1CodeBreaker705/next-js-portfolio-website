@@ -35,7 +35,7 @@ export const projects:Project[] = [
       {
         title: 'EventHub',
         description: 'A full-stack event management platform built with React, FastAPI, and PostgreSQL, featuring secure JWT authentication, refresh token workflows, role-based access control, and event registration management for both users and administrators.',
-        technologies: ['React','FastAPI','PostgreSQL'],
+        technologies: ['React','FastAPI','PostgreSQL','JWT','RBAC'],
         githubLink: 'https://github.com/1CodeBreaker705/Primetrade.ai-BackendInternship-Assessment',
         demoLink: 'https://primetrade-ai-backend-internship-as.vercel.app/',
         image: '/projects/EventHub.png',
@@ -50,7 +50,7 @@ export const projects:Project[] = [
       },
       {
         title: 'Elementum',
-        description: 'Implemented a pixel-perfect, fully responsive production-grade UI from a Figma design using React and Tailwind CSS, recreating complex layouts, responsive typography, decorative assets, and interactive components while maintaining design consistency across mobile, tablet, and desktop breakpoints.',
+        description: 'Implemented a pixel-perfect, fully responsive UI from a Figma design using React and Tailwind CSS, recreating complex layouts, responsive typography, and interactive components across multiple screen sizes.',
         technologies: ['React','TailwindCSS','Figma'],
         githubLink: 'https://github.com/1CodeBreaker705/Trams-Company-Internship-Assessment',
         demoLink: 'https://trams-company-internship-assessment.vercel.app/',
