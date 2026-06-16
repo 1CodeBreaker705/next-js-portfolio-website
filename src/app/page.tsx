@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
      <Hero/>
-     <Projects/>
+     <Projects limit={3} />
      <Skills/>
      <TerminalSection/>
     </>
