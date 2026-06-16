@@ -12,21 +12,18 @@ const AboutPage = () => {
         </h1>
 
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center leading-9">
-          I am a Computer Science undergraduate and Full Stack Developer who
-          enjoys transforming ideas into real-world products. I am passionate
-          about building meaningful software, solving challenging problems, and
-          continuously improving through hands-on experience.
+          I am a Computer Science undergraduate and Full Stack Developer who enjoys transforming ideas into
+          real-world products. What started as curiosity about how websites work gradually evolved into a
+          passion for building complete applications from concept to deployment.
           <br />
           <br />
-          Outside of academics, I spend most of my time building projects,
-          participating in hackathons, exploring new technologies, and learning
-          from the developer community. Every project teaches me something new
-          and helps me grow as both a developer and a problem solver.
+          Over the years, I have worked on a variety of projects, participated in hackathons, explored 
+          open-source development, and continuously challenged myself to learn beyond the classroom. Each
+          experience has strengthened both my technical abilities and my confidence as a builder.
           <br />
           <br />
-          I believe great software is more than just working code. It is about
-          creating experiences that are intuitive, reliable, and genuinely
-          valuable to the people who use them.
+          Today, I enjoy creating applications that combine functionality, performance, and thoughtful user
+          experiences while constantly exploring new technologies and ideas.
         </p>
       </section>
 
