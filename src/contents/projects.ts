@@ -31,5 +31,29 @@ export const projects:Project[] = [
         githubLink: 'https://github.com/1CodeBreaker705/SnapBuy-Ecommerce-Website',
         demoLink: 'https://snap-buy-ecommerce-website.vercel.app/',
         image: '/projects/SnapBuy-Ecommerce-Website.png',
-      }
+      },
+      {
+        title: 'EventHub',
+        description: 'A full-stack event management platform built with React, FastAPI, and PostgreSQL, featuring secure JWT authentication, refresh token workflows, role-based access control, and event registration management for both users and administrators.',
+        technologies: ['React','FastAPI','PostgreSQL'],
+        githubLink: 'https://github.com/1CodeBreaker705/Primetrade.ai-BackendInternship-Assessment',
+        demoLink: 'https://primetrade-ai-backend-internship-as.vercel.app/',
+        image: '/projects/EventHub.png',
+      },
+       {
+        title: 'NextGen-Dashboard',
+        description: 'Built an interactive learning dashboard with Next.js and TypeScript featuring responsive Bento-grid layouts, Supabase-powered course management, Framer Motion animations, lazy loading, and optimized rendering through hybrid Server/Client Components.',
+        technologies: ['Next.js','TypeScript','TailwindCSS','Framer Motion','Supabase'],
+        githubLink: 'https://github.com/1CodeBreaker705/andaz_kumar_company-learning_dashboard-assessment',
+        demoLink: 'https://andaz-kumar-company-learning-dashbo.vercel.app/',
+        image: '/projects/Next-Gen-LearningDashboard.png',
+      },
+      {
+        title: 'Elementum',
+        description: 'Implemented a pixel-perfect, fully responsive production-grade UI from a Figma design using React and Tailwind CSS, recreating complex layouts, responsive typography, decorative assets, and interactive components while maintaining design consistency across mobile, tablet, and desktop breakpoints.',
+        technologies: ['React','TailwindCSS','Figma'],
+        githubLink: 'https://github.com/1CodeBreaker705/Trams-Company-Internship-Assessment',
+        demoLink: 'https://trams-company-internship-assessment.vercel.app/',
+        image: '/projects/Elementum.png',
+      },
   ];
