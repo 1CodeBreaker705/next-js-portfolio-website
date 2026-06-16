@@ -1,54 +1,101 @@
-import Image from 'next/image'
 import React from 'react'
 import { FaCode } from 'react-icons/fa'
 
 const AboutPage = () => {
   return (
-    <div className='container max-w-7xl mx-auto py-20'>
-      <h1 className='text-4xl font-bold text-center mb-8'>About Me</h1>
-       {/*bio section*/}
-      <section className='mb-15'>
-       <p className='text-lg text-secondary max-w-3xl mx-auto text-center'>
-           Hi, I&apos;m a Full-Stack Web Developer who enjoys turning ideas into real web experiences. I&apos;m currently focused on building personal projects, improving my problem-solving skills, and preparing for future opportunities. I&apos;m passionate about clean design, smooth user experience, and writing code that just works. Every day, I&apos;m learning something new and getting one step closer to my goals.
-        </p> 
+    <div className='container max-w-7xl mx-auto py-20 px-4'>
+      
+      {/* About Me */}
+      <section className='mb-20'>
+        <h1 className='text-4xl font-bold text-center mb-8'>
+          About Me
+        </h1>
+
+        <p className='text-lg text-secondary max-w-3xl mx-auto text-center leading-9'>
+          I&apos;m a Computer Science undergraduate and Full Stack Developer who
+          enjoys turning ideas into real-world products. I am passionate about
+          building meaningful software, solving challenging problems, and
+          continuously learning through hands-on experience.
+          <br />
+          <br />
+          Beyond development, I actively participate in hackathons, contribute
+          to open-source initiatives, and strengthen my problem-solving
+          abilities through Data Structures and Algorithms. I see every project
+          as an opportunity to learn something new, collaborate with others,
+          and grow both as a developer and as a problem solver.
+        </p>
       </section>
-      <FaCode className='h-12 w-12 text-black dark:text-white mb-16 mx-auto'/>
-      {/* experience section */}
+
+      <FaCode className='h-12 w-12 text-black dark:text-white mb-20 mx-auto' />
+
+      {/* Development Philosophy */}
       <section className='mb-16'>
-           <h2 className='text-3xl font-bold mb-8 text-center'>Experience</h2>
-           <div className='max-w-3xl mx-auto space-y-8'>
-             <div className='bg-gray-50 dark:bg-dark/50 p-6 rounded-lg shadow-md'>
-                <h3 className='text-xl font-semibold mb-2 text-center'>Full Stack Course Completed</h3>
-                <div className='flex justify-center mb-4'>
-                  <Image src="/course_certificate.jpg" alt='course' height={500} width={500} className='object-contain '/>
-                </div>
-                <ul className='text-secondary list-disc list-inside'>
-                  <li className='mb-2'>
-                    It took me around 4 months to complete this course
-                  </li>
-                  <li>
-                    This course helped me to make strong foundation in both frontend and backend concepts
-                  </li>
-                </ul>
-             </div>
-           </div>
+        <h2 className='text-3xl font-bold mb-8 text-center'>
+          My Development Philosophy
+        </h2>
+
+        <div className='max-w-3xl mx-auto bg-gray-50 dark:bg-dark/50 p-8 rounded-lg shadow-md'>
+          <p className='text-secondary leading-8'>
+            I believe the best way to learn technology is by building.
+            Every project teaches something valuable—whether it&apos;s designing
+            better user experiences, writing cleaner code, improving
+            performance, or understanding how people interact with software.
+            <br />
+            <br />
+            For me, development is a continuous journey of curiosity,
+            experimentation, and improvement. I focus on learning by creating,
+            embracing challenges, and constantly looking for ways to build
+            better solutions than I did yesterday.
+          </p>
+        </div>
       </section>
-      {/*education section*/}
-       <section>
-         <h2 className='text-3xl font-bold mb-8 text-center'>Education</h2>
-         <div className='max-w-3xl mx-auto'>
-            <div className='bg-gray-50 dark:bg-dark/50 p-6 rounded-lg shadow-md'>
-                 <h3 className='text-xl font-semibold mb-2 '>Bachelor of Technology in Computer Science</h3>
-                 <p className='text-primary mb-2'>Maharaja Agrasen Institute Of Technology•2023-2027</p>
-                 <p className='text-secondary'>Currently Undergraduate</p>
-            </div>
-         </div>
-       </section>
-    
+
+      {/* Why I Build */}
+      <section className='mb-16'>
+        <h2 className='text-3xl font-bold mb-8 text-center'>
+          Why I Build
+        </h2>
+
+        <div className='max-w-3xl mx-auto bg-gray-50 dark:bg-dark/50 p-8 rounded-lg shadow-md'>
+          <p className='text-secondary leading-8'>
+            I enjoy creating software that solves real problems and delivers
+            meaningful value to users. Whether it&apos;s a productivity tool,
+            an ecommerce platform, or an innovative hackathon project, I find
+            satisfaction in transforming ideas into working products.
+            <br />
+            <br />
+            My goal is not just to learn technologies but to understand how
+            software can create impact, improve experiences, and make life
+            easier for the people who use it.
+          </p>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section>
+        <h2 className='text-3xl font-bold mb-8 text-center'>
+          Education
+        </h2>
+
+        <div className='max-w-3xl mx-auto'>
+          <div className='bg-gray-50 dark:bg-dark/50 p-6 rounded-lg shadow-md'>
+            <h3 className='text-xl font-semibold mb-2'>
+              Bachelor of Technology in Computer Science
+            </h3>
+
+            <p className='text-primary mb-2'>
+              Maharaja Agrasen Institute of Technology • 2023 - 2027
+            </p>
+
+            <p className='text-secondary'>
+              Currently Undergraduate
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
-    
   )
 }
 
 export default AboutPage
-
