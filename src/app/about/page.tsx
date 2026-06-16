@@ -4,7 +4,6 @@ import { FaCode } from 'react-icons/fa'
 const AboutPage = () => {
 return ( <div className='container max-w-7xl mx-auto py-20 px-4'>
 
-```
   {/* About Me */}
   <section className='mb-20'>
     <h1 className='text-4xl font-bold text-center mb-8'>
@@ -103,7 +102,6 @@ return ( <div className='container max-w-7xl mx-auto py-20 px-4'>
   </section>
 
 </div>
-```
 
 )
 }
