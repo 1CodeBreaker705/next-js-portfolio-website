@@ -82,7 +82,7 @@ return ( <div className="container max-w-7xl mx-auto py-20 px-4">
           <div className="max-w-3xl mx-auto">
             <div className="bg-gray-50 dark:bg-dark/50 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-800">
               <h3 className="text-xl font-semibold mb-2">
-                Bachelor of Technology in Computer Science
+                Bachelor of Technology in Computer Science & Engineering
               </h3>
       
               <p className="text-primary mb-2">
