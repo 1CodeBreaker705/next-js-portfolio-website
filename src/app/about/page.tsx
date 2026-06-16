@@ -38,18 +38,14 @@ return ( <div className="container max-w-7xl mx-auto py-20 px-4">
       
           <div className="max-w-2xl mx-auto bg-gray-50 dark:bg-dark/50 p-8 rounded-xl shadow-md border border-gray-200 dark:border-gray-800">
             <p className="text-secondary leading-8">
-              I believe the best way to learn is by building.
-              <br />
-              <br />
-              Rather than waiting until I know everything, I prefer to start
-              creating, experiment with new ideas, and learn through the
-              challenges that arise along the way. Every bug, design decision,
-              and technical obstacle becomes an opportunity to improve.
-              <br />
-              <br />
-              My focus is on writing maintainable code, understanding the
-              fundamentals, and continuously refining both the product and the
-              process behind it.
+              I enjoy learning by creating projects that push me beyond my current skill level. Every application I build 
+              introduces new challenges—whether it's designing better user experiences, structuring scalable backend
+              systems, or debugging unexpected issues in production.
+              <br/>  
+              <br/> 
+              Over time, I've learned that good software is not just about writing code. It requires understanding users, 
+              making thoughtful decisions, and continuously refining details that improve the overall experience.
+                
             </p>
           </div>
         </section>
@@ -62,18 +58,17 @@ return ( <div className="container max-w-7xl mx-auto py-20 px-4">
       
           <div className="max-w-2xl mx-auto bg-gray-50 dark:bg-dark/50 p-8 rounded-xl shadow-md border border-gray-200 dark:border-gray-800">
             <p className="text-secondary leading-8">
-              What excites me most about software development is the ability to
-              turn an idea into something real.
-              <br />
-              <br />
-              A simple concept can become a tool that saves time, solves a
-              problem, or improves someone&apos;s experience. That process of
-              transforming an idea into a working product is what keeps me
-              motivated to learn, create, and keep building.
-              <br />
-              <br />
-              For me, every project is a chance to create something useful while
-              pushing my skills a little further than before.
+                What motivates me most is seeing an idea evolve from a simple concept into something people can
+                actually use.
+                <br/>  
+                <br/> 
+                From personal projects to hackathon submissions, I enjoy the entire process of turning ideas
+                into products—planning features, solving technical challenges, and watching everything come together into a
+                working application.
+                <br/>  
+                <br/> 
+                Building software allows me to combine creativity, problem-solving, and continuous learning, which is
+                why I find it so rewarding.
             </p>
           </div>
         </section>
