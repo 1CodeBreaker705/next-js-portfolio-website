@@ -17,7 +17,7 @@ const AboutPage = () => {
           passion for building complete applications from concept to deployment.
           <br />
           <br />
-          Over the years, I have worked on a variety of projects, participated in hackathons, explored 
+          Over the time, I have worked on a variety of projects, participated in hackathons, explored 
           open-source development, and continuously challenged myself to learn beyond the classroom. Each
           experience has strengthened both my technical abilities and my confidence as a builder.
           <br />
