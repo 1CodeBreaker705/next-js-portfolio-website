@@ -55,7 +55,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <button onClick={toggleTheme} className="p-2 rounded-lg text-black dark:text-white  hover:bg-gray-100 hover:text-primary dark:hover:bg-gray-800 dark:hover:text-primary transition-colors cursor-pointer">
+            <button onClick={toggleTheme} className="flex items-center gap-1 p-2 rounded-lg text-black dark:text-white  hover:bg-gray-100 hover:text-primary dark:hover:bg-gray-800 dark:hover:text-primary transition-colors cursor-pointer">
               {theme === "dark" ? (
                 
                 <><SunIcon className="w-5 h-5"/>Light</>
@@ -68,7 +68,7 @@ const Navbar = () => {
           {/* mobile menu button */}
           <button
             onClick={toggleMobileMenu}
-            className="flex items-center gap-1 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer md:hidden"
+            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer md:hidden"
           >
             {isMobileMenuOpen ? (
               <XMarkIcon className="w-6 h-6" />
