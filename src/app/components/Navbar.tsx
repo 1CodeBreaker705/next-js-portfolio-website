@@ -68,7 +68,7 @@ const Navbar = () => {
           {/* mobile menu button */}
           <button
             onClick={toggleMobileMenu}
-            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer md:hidden"
+            className="flex items-center gap-1 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer md:hidden"
           >
             {isMobileMenuOpen ? (
               <XMarkIcon className="w-6 h-6" />
