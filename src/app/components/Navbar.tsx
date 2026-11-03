@@ -58,8 +58,10 @@ const Navbar = () => {
             <button onClick={toggleTheme} className="p-2 rounded-lg text-black dark:text-white  hover:bg-gray-100 hover:text-primary dark:hover:bg-gray-800 dark:hover:text-primary transition-colors cursor-pointer">
               {theme === "dark" ? (
                 <SunIcon className="w-5 h-5" />
+                <span>Light</span>
               ) : (
                 <MoonIcon className="w-5 h-5" />
+                <span>Dark</span>
               )}
             </button>
           </div>
