@@ -57,11 +57,11 @@ const Navbar = () => {
             })}
             <button onClick={toggleTheme} className="p-2 rounded-lg text-black dark:text-white  hover:bg-gray-100 hover:text-primary dark:hover:bg-gray-800 dark:hover:text-primary transition-colors cursor-pointer">
               {theme === "dark" ? (
-                <SunIcon className="w-5 h-5" />
-                <span>Light</span>
+                
+                <><SunIcon className="w-5 h-5"/>Light</>
               ) : (
-                <MoonIcon className="w-5 h-5" />
-                <span>Dark</span>
+                <><MoonIcon className="w-5 h-5" />Dark</>
+                
               )}
             </button>
           </div>
@@ -84,11 +84,27 @@ const Navbar = () => {
             <div className="md:hidden">
                 <div className="py-4 space-y-4">
                   {
-                    menuItems.map((item,index)=>(
-                      <div key={index}>
-                        <Link href={item.href} onClick={() => setIsMobileMenuOpen(false)} className="block py-2 px-4 text-black dark:text-white hover:text-primary transition-colors">{item.label}</Link>
-                      </div>
-                    ))
+                      menuItems.map((item) => {
+                          const isActive = pathname === item.href;
+                        
+                          return (
+                            <div key={item.href}>
+                              <Link
+                                href={item.href}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className={`
+                                  block py-2 px-4 transition-colors
+                                  ${isActive
+                                    ? "text-primary font-semibold"
+                                    : "text-black dark:text-white hover:text-primary"
+                                  }
+                                `}
+                              >
+                                {item.label}
+                              </Link>
+                            </div>
+                          );
+                        })
                   }
                   <div>
                     <button onClick={toggleTheme} className="flex items-center py-2 px-4 text-black dark:text-white hover:text-primary transition-colors">
