@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* desktop menu */}
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary hover:scale-105 transition-transform duration-300">
-            Ranjan's Portfolio
+            Ranjan&apos;s Portfolio
           </Link>
           {/* desktop menus */}
           <div className="hidden md:flex items-center space-x-8">
